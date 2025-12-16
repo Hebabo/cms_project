@@ -1,0 +1,33 @@
+<!-- templateType: module 
+label: Team Module 
+isAvailableForNewContent: true --> 
+<div class="team-section">
+  <div class="team-grid"> 
+    {% for item in module.members %} 
+    <div class="team-card"> 
+      <div class="member-img" style="background-image:url({{ item.image_field.src }})">
+      </div>
+      <div class="team-info">
+        {% inline_text field="name_field" value="{{ item.name_field }}" %} 
+        {% inline_text field="role" value="{{ item.role }}" %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% require_css %}
+  <style>
+    {% scope_css %}
+    .team-info {
+      {% if module.style.gradient.css %} 
+      background: {{ module.style.gradient.css }};
+      {% endif %} {{ module.style.border_field.css }}
+     border-radius: 8px;
+      padding:10px;
+      color:{{ theme.global_colors.secondary.color }};
+      background-color: {{ theme.header_and_footer.header_and_footer_bg_color.color }} %)
+    } 
+
+    {% end_scope_css %} 
+  </style> {% end_require_css %}
+</div>

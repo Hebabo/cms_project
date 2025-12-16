@@ -1,0 +1,36 @@
+<!--
+templateType: "page"
+label: "Base (Do not select)"
+isAvailableForNewContent: false
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  
+
+
+  <meta charset="utf-8">
+  <title>{{ page_meta.html_title }}</title>
+  <meta name="description" content="{{ page_meta.meta_description }}">
+
+  {{ standard_header_includes }}
+  <link rel="stylesheet" href="{{ get_asset_url('../../css/main.css') }}">
+  
+
+
+</head>
+<body>
+
+<!--   <a class="skip-link" href="#main-content">Skip to content</a> -->
+
+  {% include '/hebatullah_best-practices-theme/templates/partials/header.html' %}
+
+  {% block body %} {% endblock %}
+
+  {% include '/hebatullah_best-practices-theme/templates/partials/footer.html' %}
+
+  {{ standard_footer_includes }}
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+<header class="header" >
+ 
+ 
+  {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
+
+  {# Top header drag and drop area #}
+
+  {% dnd_area "header-top"
+    label="Top header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+<div>
+
+  {# Main header #}
+
+ <div class="container header_wrapper" style=" 
+  padding:30px 0.3em;
+">
+    
+    <div class="header__logo-wrapper" style="display: inline-block;">
+      <img class="header__logo" src="{{resize_image_url(brandSettings.logo.src,600)}}"
+           alt="{{brandSettings.logo.alt}}" width="{{brandSettings.logo.width}}" height="{{brandSettings.logo.height}}">
+      {% module_block module "rich_text" path="@hubspot/rich_text" label="Editable Quote" %}
+      {% module_attribute "html" %}
+      <p style="margin: 0">
+         One cat just leads to another<br>&mdash;Ernest Memingway
+      </p>
+      {% end_module_attribute %}
+      {% end_module_block %}
+    </div>
+
+    <nav class="header__nav=wrapper" aria-label="header-nav">
+      <ul class="header__nav">
+       
+        <li class="header__nav-item">
+           <a href="https://academy.hubspot.com/" target="_blank">About</a>
+        
+        </li>
+        <li class="header__nav-item">
+          <a href="https://academy.hubspot.com/" target="_blank">News</a>
+        </li>
+        <li class="header__nav-item">
+        <a href="https://academy.hubspot.com/" target="_blank">Contact</a>
+        </li>
+        
+      </ul>
+      
+   </nav>
+
+</div>
+
+ </div>
+  {# Bottom header drag and drop area #}
+
+  {% dnd_area "header-bottom"
+    label="Bottom header",
+    class="content-wrapper"
+  %}
+  {% end_dnd_area %}
+
+</header>

@@ -1,0 +1,44 @@
+[ {
+  "id" : "93b9ed2e-4002-f6c4-b2bf-267597b62481",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/image-text-section-1.png",
+    "alt" : "image-text-section-1",
+    "loading" : "eager",
+    "width" : 225,
+    "height" : 225,
+    "max_width" : 225,
+    "max_height" : 225
+  }
+}, {
+  "id" : "cedb445d-43ba-ca0f-d38a-128971d4b5d9",
+  "name" : "head_text",
+  "label" : "Head text",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "place title here",
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "It's cat time."
+}, {
+  "id" : "8d9d91a6-a2a9-3961-8614-a3f8db0b69f9",
+  "name" : "sub_heading",
+  "label" : "Sub heading",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "place subtitle here",
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Managing your team development schedule can be difficult."
+} ]

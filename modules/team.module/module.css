@@ -1,0 +1,20 @@
+    .member-img{
+     height:30vh;
+      width:100%;
+      background-size:cover;
+      background-position:center;
+    }
+.team-grid {
+   display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); 
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+
+} 
+.team-card { 
+  flex: 2 1 250px; 
+  background: #fff; 
+  border: 1px solid #ddd; 
+  text-align: center; border-radius: 8px; 
+}

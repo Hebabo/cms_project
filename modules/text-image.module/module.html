@@ -1,0 +1,42 @@
+<div class="image-text">
+  
+  <div class="image">
+
+	{% if module.image_field.src %}
+        {% set sizeAttrs = 'width="{{ module.image_field.width|escape_attr }}" height="{{ module.image_field.height|escape_attr }}"' %}
+        {% if module.image_field.size_type == 'auto' %} 
+          {% set sizeAttrs = 'width="{{ module.image_field.width|escape_attr }}" height="{{ module.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %} 
+        {% elif item.image_field.size_type == 'auto_custom_max' %} 
+          {% set sizeAttrs = 'width="{{ module.image_field.max_width|escape_attr }}" height="{{ module.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %} 
+      {% endif %} 
+        
+      <img src="{{ module.image_field.src|escape_url }}" 
+           alt="{{ module.image_field.alt|escape_attr }}"
+           srcset="{{ resize_image_url(module.image_field.src, 318) }} 318w,
+                  {{ resize_image_url(module.image_field.src, 340) }} 340w,
+                  {{ resize_image_url(module.image_field.src, 358) }} 358w,
+                  {{ resize_image_url(module.image_field.src, 362) }} 362w"
+           sizes="(max-width: 374px) 340px,
+                  (max-width: 767px) 358px,
+                  (max-width: 1023px) 318px,
+                  362px"
+           width="{{ module.image_field.width}}"
+           height="{{ module.image_field.height}}"
+           fetchpriority="high"
+           {{ sizeAttrs }}
+           > 
+      {% endif %}
+
+</div>
+  
+<div class="image-text-content">
+  <h1>
+    {% inline_text field="head_text" value="{{ module.head_text }}" %}
+  </h1>
+  <p>
+    {% inline_text field="sub_heading" value="{{ module.sub_heading }}" %}
+  </p>
+  </div>
+</div>
+
+

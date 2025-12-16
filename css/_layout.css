@@ -1,0 +1,59 @@
+/* layout - header/footer and sections basic layout */
+/* this is a test to see is the local is working */
+/* anther test */
+.header, .footer {
+  background-color: {{ theme.header_and_footer.header_and_footer_bg_color.color }};
+}
+
+.header__logo-wrapper p, .footer p, a{
+ color: {{ theme.global_colors.secondary.color }};
+}
+
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+
+    .header_wrapper {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .header__nav-wrapper {
+        margin-top: 15px;
+        width: 100%;
+      
+    }
+    .header__nav {
+        flex-direction: column;
+        gap: 8px; 
+    }
+
+    .header__nav-item {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .header__logo-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .header__logo-wrapper p {
+        text-align: center;
+    }
+}
+

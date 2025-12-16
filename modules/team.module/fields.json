@@ -1,0 +1,227 @@
+[ {
+  "id" : "9cde8954-be77-a735-40d7-b6fd3604aa30",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d5732fb8-3999-15d3-d045-7e3fab93134c",
+    "name" : "border_field",
+    "label" : "Border",
+    "required" : false,
+    "locked" : false,
+    "allow_custom_border_sides" : false,
+    "type" : "border",
+    "display_width" : null,
+    "default" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "border_field" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  }
+}, {
+  "id" : "e670d9fa-25e7-bd6e-216b-1167595b00a6",
+  "name" : "members",
+  "label" : "members",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "8b329e2b-c4e7-81c5-8147-e51249d6d887",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    }
+  }, {
+    "id" : "52748cc6-8199-4f04-2ead-6ece597d8b38",
+    "name" : "name_field",
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "place name here",
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Hebatullah"
+  }, {
+    "id" : "94a35139-0583-55b9-d24f-5f551e0165e7",
+    "name" : "role",
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "role here",
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "CEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    },
+    "name_field" : "Hebatullah",
+    "role" : "CEO"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    },
+    "name_field" : "Hebatullah",
+    "role" : "CEO"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    },
+    "name_field" : "Hebatullah",
+    "role" : "CEO"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    },
+    "name_field" : "Hebatullah",
+    "role" : "CEO"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://147156219.fs1.hubspotusercontent-eu1.net/hubfs/147156219/team-section.png",
+      "alt" : "team-section",
+      "loading" : "lazy",
+      "width" : 172,
+      "height" : 148,
+      "max_width" : 172,
+      "max_height" : 148
+    },
+    "name_field" : "Hebatullah",
+    "role" : "CEO"
+  } ]
+} ]

@@ -1,0 +1,16 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Practicum Page
+  screenshotPath: /hebatullah_best-practices-theme/images/template-previews/page.png
+-->
+{% extends "./base.html" %}
+
+{% block body %}
+  <main class="container" id="main-content">
+    {% dnd_area "main_content" label="Main content area" %}
+         {% include_dnd_partial path="../../sections/image-text.html" %}
+         {% include_dnd_partial path="../../sections/team-section.html" %}
+    {% end_dnd_area %}
+  </main>
+{% endblock %}
