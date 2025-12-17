@@ -133,8 +133,6 @@ Special thanks to **Eng. Malak Ahmed Hussein** for her valuable guidance and sup
 
 ## 10. Deployment & Resources
 - 🌐 **Live Website:** [https://147440596.hs-sites-eu1.com/sportsin](https://147440596.hs-sites-eu1.com/sportsin)
-- 💻 **GitHub Repository:** [https://github.com/Hebabo/cms_project](https://github.com/Hebabo/cms_project)
-
 ---
 
 ## 11. Conclusion
