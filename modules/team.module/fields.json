@@ -104,7 +104,7 @@
   "required" : false,
   "locked" : false,
   "occurrence" : {
-    "min" : null,
+    "min" : 1,
     "max" : null,
     "sorting_label_field" : null,
     "default" : 5

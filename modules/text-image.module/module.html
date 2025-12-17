@@ -1,7 +1,6 @@
-<div class="image-text">
+<div class="image-text" id="About">
   
   <div class="image">
-
 	{% if module.image_field.src %}
         {% set sizeAttrs = 'width="{{ module.image_field.width|escape_attr }}" height="{{ module.image_field.height|escape_attr }}"' %}
         {% if module.image_field.size_type == 'auto' %} 

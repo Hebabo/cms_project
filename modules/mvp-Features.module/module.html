@@ -1,0 +1,39 @@
+
+<div class="features-card">
+  {% for item in module.feature_items_group %}
+  <div class="feature-item">
+
+      <div class="feature-icon">
+          {% icon
+        name="{{ item.check_field.name }}"
+        style="{{ item.check_field.type }}"
+        unicode="{{ item.check_field.unicode }}"
+        icon_set="{{ item.check_field.icon_set }}"
+      %}
+      </div>
+      <span style="font-family: {{ module.style.font_field.font }}; {{ module.style.font_field.style|escape_attr }}; color: {{ module.style.font_field.color|escape_attr }}; font-size: {{ module.style.font_field.size|escape_attr }}{{module.style.font_field.size_unit|escape_attr }};">{% inline_text field="feature_field" value="{{ item.feature_field }}" %}</span>
+
+  </div>
+    {% endfor %}
+</div>
+
+ {% require_css %}
+<style>
+  {% scope_css %}
+  .features-card {
+    {% if module.style.gradient.css %} 
+    background: {{ module.style.gradient.css }};
+    {% endif %} 
+    {{ module.style.border_field.css }}
+    border-radius: 8px;
+    margin:16px;
+    padding:0px 16px;
+  } 
+  {% end_scope_css %} 
+</style> 
+{% end_require_css %}
+
+
+
+
+

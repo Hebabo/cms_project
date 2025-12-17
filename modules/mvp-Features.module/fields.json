@@ -1,0 +1,237 @@
+[ {
+  "id" : "2914ab11-f435-3599-c4e0-50a35cc299dc",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "88867a00-c758-05a0-d64d-5359177d4c0e",
+    "name" : "font_field",
+    "label" : "Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "display_width" : null,
+    "default" : {
+      "size" : 16,
+      "styles" : {
+        "text-decoration" : "none",
+        "font-weight" : "bold",
+        "font-style" : "normal"
+      },
+      "size_unit" : "px",
+      "font" : "arial, helvetica, sans-serif",
+      "fallback" : null,
+      "variant" : null,
+      "font_set" : "DEFAULT",
+      "color" : "#000000"
+    }
+  }, {
+    "id" : "422a5024-a208-51a2-2e0b-2a28a0710cc7",
+    "name" : "border_field",
+    "label" : "Border",
+    "required" : false,
+    "locked" : false,
+    "allow_custom_border_sides" : false,
+    "type" : "border",
+    "display_width" : null,
+    "default" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "font_field" : {
+      "size" : 16,
+      "styles" : {
+        "text-decoration" : "none",
+        "font-weight" : "bold",
+        "font-style" : "normal"
+      },
+      "size_unit" : "px",
+      "font" : "arial, helvetica, sans-serif",
+      "fallback" : null,
+      "variant" : null,
+      "font_set" : "DEFAULT",
+      "color" : "#000000"
+    },
+    "border_field" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#666666",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  }
+}, {
+  "id" : "9cbe93eb-17d8-dd25-0ca1-d17c5ca5ae73",
+  "name" : "feature_items_group",
+  "label" : "feature-items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : 8
+  },
+  "children" : [ {
+    "id" : "f5157b5a-18ac-5af6-e0bd-3dad4669d99d",
+    "name" : "check_field",
+    "label" : "check",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "display_width" : null,
+    "default" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "c3bcde68-9d76-a2ba-5434-dc7c0028976e",
+    "name" : "feature_field",
+    "label" : "Feature",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "place feature here",
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "User authentication and sports profile creation"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  }, {
+    "check_field" : {
+      "name" : "Check Circle",
+      "unicode" : "f058",
+      "type" : "SOLID"
+    },
+    "feature_field" : "User authentication and sports profile creation"
+  } ]
+} ]

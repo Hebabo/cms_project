@@ -1,7 +1,7 @@
 <!-- templateType: module 
 label: Team Module 
 isAvailableForNewContent: true --> 
-<div class="team-section">
+<div class="team-section" id="Team">
   <div class="team-grid"> 
     {% for item in module.members %} 
     <div class="team-card"> 
@@ -15,15 +15,11 @@ isAvailableForNewContent: true -->
     {% endfor %}
   </div>
   
-
-  
   {% require_css %}
   <style>
     {% scope_css %}
     .team-info {
-      {% if module.style.gradient.css %} 
-      background: {{ module.style.gradient.css }};
-      {% endif %} {{ module.style.border_field.css }}
+     {{ module.style.border_field.css }}
      border-radius: 8px;
       padding:10px;
       color:{{ theme.global_colors.secondary.color }};
@@ -31,5 +27,6 @@ isAvailableForNewContent: true -->
     } 
 
     {% end_scope_css %} 
-  </style> {% end_require_css %}
+  </style>
+  {% end_require_css %}
 </div>
