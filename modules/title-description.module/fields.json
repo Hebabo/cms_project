@@ -1,0 +1,70 @@
+[ {
+  "id" : "bbf32b82-cc85-d0dd-b408-0fa6724c3353",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2d69ac56-aa7b-eb48-81a0-6c2fdc6d36f9",
+    "name" : "font_field",
+    "label" : "Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "display_width" : null,
+    "default" : {
+      "font" : "impact, chicago",
+      "fallback" : null,
+      "variant" : null,
+      "font_set" : "DEFAULT",
+      "size" : 3,
+      "size_unit" : "px",
+      "color" : "#000000",
+      "styles" : {
+        "text-decoration" : "none",
+        "font-weight" : "bold",
+        "font-style" : "normal"
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "font_field" : {
+      "font" : "impact, chicago",
+      "fallback" : null,
+      "variant" : null,
+      "font_set" : "DEFAULT",
+      "size" : 3,
+      "size_unit" : "px",
+      "color" : "#000000",
+      "styles" : {
+        "text-decoration" : "none",
+        "font-weight" : "bold",
+        "font-style" : "normal"
+      }
+    }
+  }
+}, {
+  "id" : "c1a8ea66-0bd3-df69-0a3d-43edadcc3946",
+  "name" : "title_field",
+  "label" : "title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div style=\"text-align: center; font-size: 30px;\"><strong>title</strong></div>"
+}, {
+  "id" : "690e2dc5-678d-22a7-7369-85bb0f9daa77",
+  "name" : "description_field",
+  "label" : "description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<div style=\"text-align: center; font-size: 16px;\">description</div>"
+} ]
