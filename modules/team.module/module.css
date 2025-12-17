@@ -4,6 +4,8 @@
       background-size:cover;
       background-position:center;
     }
+
+    
 .team-grid {
    display:grid;
   grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); 
@@ -12,6 +14,8 @@
   justify-content: center;
 
 } 
+
+
 .team-card { 
   flex: 2 1 250px; 
   background: #fff; 
