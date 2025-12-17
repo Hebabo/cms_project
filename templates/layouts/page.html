@@ -9,8 +9,15 @@
 {% block body %}
   <main class="container" id="main-content">
     {% dnd_area "main_content" label="Main content area" %}
-         {% include_dnd_partial path="../../sections/image-text.html" %}
-         {% include_dnd_partial path="../../sections/team-section.html" %}
+          <div id="About">
+            {% include_dnd_partial path="../../sections/image-text.html" %}
+         </div>
+         <div id="Team">
+             {% include_dnd_partial path="../../sections/team-section.html" %}
+         </div>
+          <div id="MVP">
+         {% include_dnd_partial path="../../sections/mvp-section.html" %}
+          </div>
     {% end_dnd_area %}
   </main>
 {% endblock %}
